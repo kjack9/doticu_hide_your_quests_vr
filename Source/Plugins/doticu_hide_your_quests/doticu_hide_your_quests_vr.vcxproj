@@ -15,7 +15,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{A076C102-FB5A-4602-B937-4D9D17BCBCEF}</ProjectGuid>
     <RootNamespace>doticuquestlookup</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -27,7 +27,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -73,7 +73,7 @@
     </Link>
     <PostBuildEvent>
       <Command>copy "$(TargetPath)" "$(ProjectDir)\..\..\..\SKSE\Plugins\$(TargetFileName)" /Y
-copy "$(TargetPath)" "C:\Games\Steam\steamapps\common\SkyrimVR\Data\SKSE\Plugins\" /Y</Command>
+copy "$(TargetPath)" "C:\Games\Skyrim Tools\Mod Organizer 2 Profiles\Skyrim VR\mods\Hide Your Quests (ESL flagged)\SKSE\Plugins\" /Y</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Copy Plugin to SKSE</Message>
@@ -102,17 +102,17 @@ copy "$(TargetPath)" "C:\Games\Steam\steamapps\common\SkyrimVR\Data\SKSE\Plugins
     </Link>
     <PostBuildEvent>
       <Command>copy "$(TargetPath)" "$(ProjectDir)\..\..\..\SKSE\Plugins\$(TargetFileName)" /Y
-copy "$(TargetPath)" "C:\Games\Steam\steamapps\common\SkyrimVR\Data\SKSE\Plugins\" /Y</Command>
+copy "$(TargetPath)" "C:\Games\Skyrim Tools\Mod Organizer 2 Profiles\Skyrim VR\mods\Hide Your Quests (ESL flagged)\SKSE\Plugins\" /Y</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Copy Plugin to SKSE</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\doticu-mcmlib\Source\Plugins\doticu_mcmlib\doticu_mcmlib.vcxproj">
+    <ProjectReference Include="..\..\..\..\doticu_mcmlib\Source\Plugins\doticu_mcmlib\doticu_mcmlib.vcxproj">
       <Project>{77a1a50c-a806-4162-9c94-871bd106bc18}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\doticu-skylib-vr\Source\Plugins\doticu_skylib\doticu_skylib_vr.vcxproj">
+    <ProjectReference Include="..\..\..\..\doticu_skylib\Source\Plugins\doticu_skylib\doticu_skylib_vr.vcxproj">
       <Project>{0791ab06-0e03-486a-9a24-2feefc26674b}</Project>
     </ProjectReference>
   </ItemGroup>
